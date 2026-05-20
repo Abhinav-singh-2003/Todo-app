@@ -1,19 +1,19 @@
 const mongoose=require("mongoose");
 const userSchema=new mongoose.Schema({
     email:{
-        type:string,
+        type:String,
         required:true,
     },
     password:{
-        type:string,
+        type:String,
         required:true,
     },
     username:{
-        type:string,
+        type:String,
     },
     list:[{
-        type:mongoose.Types.objectId,
-        Ref:"List",
+        type:mongoose.Types.ObjectId,
+        ref:"List",
     }]
 
     
